@@ -12,12 +12,14 @@
     
     <title>Portfolio</title>
     <link rel="icon" href="avtar.png" type="image/avtar.png">
+    <script src="front.js"></script>
 </head>
 
  
 <!--<video autoplay muted loop id="myVideo">
     <source src="video5.mp4" type="video/mp4">
-  </video>-->
+  </video>
+ <body>-->
  
   <script src="front.js"></script>
 
@@ -29,40 +31,40 @@
  
   <ul class="menu scroll-nav d-flex">
     <li>
-        <a class="scroll-to" href="index.html#home">
+        <a class="scroll-to" href="#ty">
             <span>Home</span> <i class="las la-home"></i>
         </a>
     </li>
     <li>
-        <a class="scroll-to" href="index.html#about">
+        <a class="scroll-to" href="#an">
             <span>About</span> <i class="lar la-user"></i>
         </a>
     </li>
     <li>
-      <a class="scroll-to" href="index.html#portfolio">
+      <a class="scroll-to" href="#edt">
           <span>EDUCATION</span> <i class="las la-school"></i>
       </a>
   </li>
  
     <li>
-        <a class="scroll-to" href="index.html#skills">
+        <a class="scroll-to" href="#op">
             <span>Skills</span> <i class="las la-shapes"></i>
         </a>
     </li>
     <li>
-        <a class="scroll-to" href="index.html#portfolio">
+        <a class="scroll-to" href="#pn">
             <span>Projects</span> <i class="las la-grip-vertical"></i>
         </a>
     </li>
 
     <li>
-        <a class="scroll-to" href="index.html#contact">
+        <a class="scroll-to" href="#ct">
             <span>Contact</span> <i class="las la-envelope"></i>
         </a>
     </li>
 </ul>
 
-  <div class="sidebar">
+  <div class="sidebar" >
     <div class="transbox">
     <h1 class="icon">K A V Y A</h1>
     <img  class="navimg"src="kavya.jpg">
@@ -88,17 +90,15 @@
   </ul>
   </div>
   </div>
-  <div class="about">
+  <div class="about" id="ty">
     <a class="ab">Hello World!!</a>
     <p class="descrip">
     <a class="name wrapper"data-text="I'm Kavya Mittal"></a> <br>
     
-    <a class="graduation"> CS Undergraduate</a> <br>
-   
-   
-  </div>
+    <a class="graduation"> CS Undergraduate</a> 
+</div>
  
- <section class="aboutt">
+ <section class="aboutt" id="an">
 <a class="who">WHO </a> <a class="inherit">AM I??</a>
 <div id="abo">
  <p class="left">An enthusiastic fresher with highly motivated and leadership skills pursuing bachelors of engineering degree in Computer
@@ -111,7 +111,7 @@
   
   <a id="edt">EDUCATION</a>
   
- <div id="educat"><div class="line"><div class="curr">
+ <div id="educat"><div class="curr">
   <span class="date">2020 - 2024</span>
   <h2>SRM University</h2>
   <p>Bachelor of Technology - BTech, Computer Science</p> </div>
@@ -131,51 +131,139 @@
   </div>
  </div>
 </section>
-<div class="skill-section">
-  <a class="mi">MY </a><a class="adv">Advantages</a>
-  <div skill="padding">
-  <div class="skill-container">
-     <div class="skill-card">
-      <img src="html.png" class="skill-img" alt="">
-     <h1 class="skill-name">HTLM</h1>
-    
-      
-     </div>
+
+ 
+  <div class="skill-section" id="op">
+    <a class="mi">MY </a><a class="adv">Advantages</a>
+    <div skill="padding">
+    <div class="skill-container">
+       <div class="skill-card">
+        <img src="html.png" class="skill-img" alt="">
+       <h1 class="skill-name">HTLM</h1>
+     <div class="progress-bar">
+      <div class="progress" id="programming-progress"></div>
+    </div>
+  </div> 
+   
      <div class="skill-card">
       <img src="css.png" class="skill-img" alt="">
       <h1 class="skill-name">CSS</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming"></div>
+      </div>
       </div>
      <div class="skill-card">
       <img src="js.png" class="skill-img" alt="">
       <h1 class="skill-name">JS</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming-p"></div>
+      </div>
      </div>
      <div class="skill-card">
       <img src="c.png" class="skill-img" alt="">
       <h1 class="skill-name">C</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming-pr"></div>
+      </div>
      </div>
      <div class="skill-card">
       <img src="cpp.png"class="skill-img" alt="">
       <h1 class="skill-name">C++</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming-pro"></div>
+      </div>
      </div>
      <div class="skill-card">
       <img src="vs.jpeg" class="skill-img" alt="">
       <h1 class="skill-name">VS CODE</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming-prog"></div>
+      </div>
      </div>
      <div class="skill-card">
       <img src="GitHub.png" class="skill-img" alt="">
       <h1 class="skill-name">GITHUB</h1>
-      <div class="skill-level">98%</div>
+      <div class="progress-bar">
+        <div class="progress" id="programming-progre"></div>
+      </div>
      </div>
+
+</div>
+</div>
+<div class="proj" id="pn">
+<a class="projects">PROJECTS</a>
+<div class="project-container">
+  <div class="card" style="width: 18rem;">
+    <img src="kavya.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="kavya.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="kavya.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="kavya.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="kavya.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
   </div>
 </div>
 </div>
-<h5 id="hul">GET IN TOUCH</h5>
-<div class="cr">
+<script>
+  function animateProgress(elementId, targetWidth) {
+  let element = document.getElementById(elementId);
+  let currentWidth = 0;
+
+  let animation = setInterval(frame, 10);
+
+  function frame() {
+    if (currentWidth >= targetWidth) {
+      clearInterval(animation);
+    } else {
+      currentWidth++;
+      element.style.width = currentWidth + '%';
+    }
+  }
+}
+
+// Usage
+animateProgress('programming-progress', 50);
+animateProgress('programming', 90);
+animateProgress('programming-p', 90);
+animateProgress('programming-pr', 80);
+animateProgress('programming-pro', 90);
+animateProgress('programming-prog', 60);
+animateProgress('programming-progre', 70);
+  </script>
+  <div id="ct">
+<h5 id="hul" >GET IN TOUCH</h5>
+<div class="cr" >
 
 <form> 
     
@@ -195,6 +283,7 @@
   
     <input type="submit" value="Submit">
   </form>
+</div>
 </div>
 
 

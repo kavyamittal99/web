@@ -1,7 +1,8 @@
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    background:url("video5.mp4");
 
 }
 
@@ -17,36 +18,6 @@
     min-height: 100%;
     background: repeat;
   }
-.page-loader{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10000;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page-loader .bounceball {
-    position: relative;
-    display: inline-block;
-    height: 37px;
-    width: 15px;
-}
-.page-loader .bounceball:before {
-    position: absolute;
-    content: '';
-    display: block;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    transform-origin: 50%;
-    animation: bounceLoader 500ms alternate infinite ease;
-}
 
 
 
@@ -294,6 +265,7 @@ div.transbox{
     color:black;
   
 }
+
 .descrip{
     padding-top:30px;
     padding-left:120px;
@@ -334,6 +306,7 @@ a::before{
     padding-top: 300px;
     padding-bottom: 60px;
 }
+
 
 .educat{
     padding-left:160px;
@@ -376,19 +349,39 @@ a::before{
     border-color: #575757;
 
 }
-.line{
-    border-left: 2px solid #575757;
-  
-}
+
 #edt{
 
-    font-size:80px;
+    font-size:130px;
     padding-left:200px;
     text-align: center;
     
     
     
 }
+#edt {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 90px;
+  }
+#edt  {
+   
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    animation: edt 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes edt{
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 
  .curr{
     padding-left:300px;
@@ -397,6 +390,15 @@ a::before{
     
     
 }
+@keyframes id{
+    from {
+      left: 0;
+    }
+  
+    to {
+      right: 20;
+    }
+  }
 .twelth{
     padding-left:300px;
     padding-top:100px;
@@ -446,7 +448,53 @@ a::before{
     text-transform: capitalize;
     text:center;
 }
+.progress-bar {
+    width: 30%;
+    background-color: lightgray;
+    border-radius: 4px;
+    height: 10px;
+    position: relative;
+  }
+  
+  .progress {
+    width: 0%;
+    background-color: orange;
+    height: 100%;
+    border-radius: 4px;
+    transition:  1s ease;
+  }
+  
+.proj{
+    padding-top:250px;
+   
+}
+.projects{
+    padding-left:600px;
+    padding-bottom:50px;
+    font-size:80px;
+    
+}
+.project-container{
+ padding-top: 100px;
+    padding-left:450px;
+    display:grid;
+    grid-template-columns:auto auto ;
+    grid-gap: 35px;
+    padding-bottom:10px;
 
+}
+.card{
+    border:1px solid black;
+   padding:60px;
+   height: 260px;
+   width:400px;
+   
+   padding-bottom:10px;
+}
+.card-img-top{
+    height:60px;
+    width:80px;
+}
 
 #hul{
     text-align: center;
